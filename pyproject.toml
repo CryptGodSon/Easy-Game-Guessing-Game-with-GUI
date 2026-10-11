@@ -1,0 +1,14 @@
+[project]
+name = "easy-guessing-game"
+version = "1.1.0"
+description = "A simple number guessing game with a Tkinter GUI"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+
+[tool.pylint.basic]
+# Test method names describe themselves; no docstrings required.
+no-docstring-rgx = "^(_|test_)"
+
+[tool.pylint.format]
+max-line-length = 100
