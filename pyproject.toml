@@ -1,10 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "easy-guessing-game"
-version = "1.1.0"
-description = "A simple number guessing game with a Tkinter GUI"
+version = "2.0.0"
+description = "A simple number guessing game with a Tkinter GUI (English / Polish)"
 readme = "README.md"
 license = { file = "LICENSE" }
 requires-python = ">=3.9"
+keywords = ["game", "guessing-game", "tkinter", "gui", "python"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Games/Entertainment :: Puzzle Games",
+    "Natural Language :: English",
+    "Natural Language :: Polish",
+]
+
+[project.urls]
+Homepage = "https://github.com/CryptGodSon/Easy-Game-Guessing-Game-with-GUI"
+
+[project.gui-scripts]
+guessing-game = "main:main"
+
+[tool.setuptools]
+py-modules = ["game", "i18n", "main", "stats"]
 
 [tool.pylint.basic]
 # Test method names describe themselves; no docstrings required.
